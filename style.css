@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
+}
+
+.login-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-container input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2ecc71;
+}
+
+.admin-btn {
+  background: #9b59b6;
+}
+
+.admin-btn:hover {
+  background: #8e44ad;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #34495e;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #2ecc71;
+}
+
+.navbar input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* ===== PRODUCT GRID ===== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  background: #eafaf1;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ===== IKLAN ===== */
+.iklan {
+  background: #f39c12;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+/* ===== ADMIN TABLE ===== */
+.admin-table-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #2c3e50;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .admin-table-container {
+    grid-template-columns: 1fr;
+  }
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+}
